@@ -61,19 +61,19 @@ Este proyecto tiene como objetivo predecir el Precio Marginal Local (PML) en el 
 
 | Visualización | Descripción |
 |---------------|-------------|
-| ![Dashboard](./images/Panel_Anual.PNG)  | Visión general de la tendencia del tiempo|
-| ![Proyección 1, 3 y 5 años](./images/Proyeccion_1_3_5_años.PNG)  | Visualización de 1 3 y 5 años. |
-| ![Proyección SARIMA](./images/output_SARIMA.png)  | Grafica creada con ML con libreria Sarima |
+| ![Dashboard](./pml-cancun-forecasting/images/Panel_Anual.PNG)  | Visión general de la tendencia del tiempo|
+| ![Proyección 1, 3 y 5 años](./pml-cancun-forecasting/images/Proyeccion_1_3_5_años.PNG)  | Visualización de 1 3 y 5 años. |
+| ![Proyección SARIMA](./pml-cancun-forecasting/images/output_SARIMA.png)  | Grafica creada con ML con libreria Sarima |
 
 ---
 ## 📸 Capturas de Pantalla de Dashboard Proyeccion Anual
 
 | Visualización | Descripción |
 |---------------|-------------|
-| ![Comparacion Temporal](./images/predicion_por_año_comp_temp.PNG)  | Precio vs Precio Predicho por año |
-| ![Grafico de Dispersion](./images/predicion_por_año_dispersion.PNG)  | Grafico de dispersion por año |
-| ![Mapa de Calor ](./images/predicion_por_año_heatmap.PNG)  | Mapa de Calor por hora  |
-| ![Outliers](./images/output.png) | Datos anomalos detectados |
+| ![Comparacion Temporal](./pml-cancun-forecasting/images/predicion_por_año_comp_temp.PNG)  | Precio vs Precio Predicho por año |
+| ![Grafico de Dispersion](./pml-cancun-forecasting/images/predicion_por_año_dispersion.PNG)  | Grafico de dispersion por año |
+| ![Mapa de Calor ](./pml-cancun-forecasting/images/predicion_por_año_heatmap.PNG)  | Mapa de Calor por hora  |
+| ![Outliers](./pml-cancun-forecasting/images/output.png) | Datos anomalos detectados |
 
 ---
 
