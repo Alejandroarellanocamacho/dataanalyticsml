@@ -9,9 +9,11 @@ Variación Mensual: El PML promedio mostró su valor más alto durante el mes de
 
 Identificación de Outliers: Mediante el análisis de cuartiles y el rango intercuartílico, se identificaron valores atípicos (outliers) en la distribución del PML. La Figura 1 muestra la distribución del precio con los límites inferior y superior para la detección de outliers. Se observa una concentración significativa de precios en rangos bajos, con la presencia de valores extremos superiores que alcanzan niveles considerablemente altos. Estos picos podrían estar asociados a eventos específicos de alta demanda o restricciones en la red de transmisión.
 
-![Outliers](./pml-cancun-forecasting/images/output.png)
+![Outliers](../images/output.png) 
 
 Relación entre Congestión y PML: Un análisis de mapa de calor sugirió una relación positiva entre la congestión en la red y el PML promedio, lo que refuerza la hipótesis de que la congestión es un factor relevante que impacta el precio de la energía en el nodo CANCUN.
+
+![Heatmap](../images/heatmap.PNG)
 
 ##  Resumen Ejecutivo
 - **Objetivo**: Predecir precios horarios para 1, 3 y 5 años
@@ -27,6 +29,13 @@ Relación entre Congestión y PML: Un análisis de mapa de calor sugirió una re
     }
     predicciones_sarima = {}
 modelo = auto_arima(df, seasonal=True, m=24)
+
+# Uso de librerias 
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import prophet as Prophet
 ```
 
 ## Hallazgos
@@ -34,16 +43,17 @@ modelo = auto_arima(df, seasonal=True, m=24)
 
 
 ## Dashboard Proyeccion Precio Anual
-|![Captura del dashboard Anual](./pml-cancun-forecasting/images/Panel_Anual.PNG)|
-|![Captura](./images/Proyeccion_1_3_5_años.PNG)|
-|![Proyeccion SARIMA](./pml-cancun-forecasting/images/Proyeccion_sarima.PNG)|
+
+|![Captura del dashboard Anual](../images/Panel_Anual.PNG)|
+|![Captura](../images/Proyeccion_1_3_5_años.PNG)|
+|![Proyeccion SARIMA](../images/Proyeccion_sarima.PNG)|
 
 ---
 
 # Dashboard Predicioón Diaria
-|![Captura Por año Comparación temporal](./pml-cancun-forecasting/images/predicion_por_año_comp_temp.PNG)|
-|![Grafico de Dispersión](./pml-cancun-forecasting/images/predicion_por_año_dispersion.PNG)|
-|![Mapa de calor](./pml-cancun-forecasting/images/predicion_por_año_heatmap.PNG)|
+|![Captura Por año Comparación temporal](../images/predicion_por_año_comp_temp.PNG)|
+|![Grafico de Dispersión](../images/predicion_por_año_dispersion.PNG)|
+|![Mapa de calor](../images/predicion_por_año_heatmap.PNG)|
 
 
 
@@ -111,7 +121,7 @@ Se realizaron proyecciones para los siguientes horizontes:
 
 ### Ejemplo de visualización:
 
-![Gráfica SARIMA](./pml-cancun-forecasting/images/output_SARIMA.png)
+![Gráfica SARIMA](../images/output_SARIMA.png)
 
 ---
 
